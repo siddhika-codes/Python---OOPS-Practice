@@ -1,42 +1,42 @@
 # task1 ShoppingCart class banao jisme method calculate_total(price, quantity, discount) 
 # ho — jo discount minus karke total nikale. 
-# class ShoppingCart:
+class ShoppingCart:
 
-#     def __init__(self,price, quantity, discount):
-#         self.price = price
-#         self.quantity = quantity
-#         self.discount = discount
+    def __init__(self,price, quantity, discount):
+        self.price = price
+        self.quantity = quantity
+        self.discount = discount
 
-#     def calculate_total(self):
-#         calculate = self.price*self.quantity
-#         total = calculate - self.discount
-#         return total
+    def calculate_total(self):
+        calculate = self.price*self.quantity
+        total = calculate - self.discount
+        return total
 
-# shop = ShoppingCart(400,4,80)
-# finalans = shop.calculate_total()
-# print(finalans)
+shop = ShoppingCart(400,4,80)
+finalans = shop.calculate_total()
+print(finalans)
 
 # task2 Movie Ticket Booking
-# class TicketBooking:
+class TicketBooking:
 
-#     def __init__(self,nameofmovie, ticketprice,ticketsnumber):
-#         self.nameofmovie = nameofmovie
-#         self.ticketprice = ticketprice
-#         self.ticketsnumber = ticketsnumber
+    def __init__(self,nameofmovie, ticketprice,ticketsnumber):
+        self.nameofmovie = nameofmovie
+        self.ticketprice = ticketprice
+        self.ticketsnumber = ticketsnumber
 
-#     def book_tickets(self):
-#         total = self.ticketprice*self.ticketsnumber
-#         if self.ticketsnumber > 5:
-#             discount = total * 10/100
-#             final = total - discount
-#             return final
-#         else:
-#             return total
+    def book_tickets(self):
+        total = self.ticketprice*self.ticketsnumber
+        if self.ticketsnumber > 5:
+            discount = total * 10/100
+            final = total - discount
+            return final
+        else:
+            return total
             
         
-# tic = TicketBooking("Mr.Majnu",500,7)
-# ans = tic.book_tickets()
-# print(ans)
+tic = TicketBooking("Mr.Majnu",500,7)
+ans = tic.book_tickets()
+print(ans)
 
 # task3 : Electricity Bill Calculator
 class ElectricityBill:

@@ -1,48 +1,48 @@
 # Task: Person → Student
-# class Person:
+class Person:
 
-#     def __init__(self, name, age):
-#         self.name = name
-#         self.age = age
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
-#     def introduce(self):
-#         print(f"mera naam h {self.name} aur main {self.age} ka hoon")
+    def introduce(self):
+        print(f"mera naam h {self.name} aur main {self.age} ka hoon")
 
-# class student(Person):
+class student(Person):
 
-#     def __init__(self, name, age, roll_number):
-#         super().__init__(name, age,)
-#         self.roll_number = roll_number
+    def __init__(self, name, age, roll_number):
+        super().__init__(name, age,)
+        self.roll_number = roll_number
 
-#     def show_roll(self):
-#         print(f"Mera roll number {self.roll_number} hai")
+    def show_roll(self):
+        print(f"Mera roll number {self.roll_number} hai")
 
-# Stud = student("vidit", 24, 2317)
-# Stud.introduce()
-# Stud.show_roll()
+Stud = student("vidit", 24, 2317)
+Stud.introduce()
+Stud.show_roll()
 
 # Task: Vehicle → Car
-# class Vehicle:
+class Vehicle:
 
-#     def __init__(self, brand, speed):
-#         self.brand = brand
-#         self.speed = speed
+    def __init__(self, brand, speed):
+        self.brand = brand
+        self.speed = speed
 
-#     def show_speed(self):
-#         print(f"{self.brand} ki speed {self.speed} km/h hai.")
+    def show_speed(self):
+        print(f"{self.brand} ki speed {self.speed} km/h hai.")
 
-# class Car(Vehicle):
+class Car(Vehicle):
     
-#     def __init__(self, brand, speed, typeoffuel):
-#         super().__init__(brand, speed)
-#         self.typeoffuel = typeoffuel
+    def __init__(self, brand, speed, typeoffuel):
+        super().__init__(brand, speed)
+        self.typeoffuel = typeoffuel
 
-#     def show_fuel(self):
-#         print(f"{self.brand} ka fuel type {self.typeoffuel} hai.")
+    def show_fuel(self):
+        print(f"{self.brand} ka fuel type {self.typeoffuel} hai.")
 
-# gaadi = Car("Toyato",440,"CNG")
-# gaadi.show_speed()
-# gaadi.show_fuel()
+gaadi = Car("Toyato",440,"CNG")
+gaadi.show_speed()
+gaadi.show_fuel()
 
 # Task: Animal → Dog (with fixed sound)
 class Animal:
